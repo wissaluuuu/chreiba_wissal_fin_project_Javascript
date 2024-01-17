@@ -11857,6 +11857,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.body {
+  overflow-x: hidden;
+}
+
 .navbar {
   background-color: white !important;
   padding: 5vh;
@@ -11877,7 +11881,7 @@ textarea.form-control-lg {
 
 .boutton-navbar {
   color: white;
-  background-color: red;
+  background-color: #ce1212;
   border: none;
   border-radius: 20px;
   width: 6vw;
@@ -11885,6 +11889,267 @@ textarea.form-control-lg {
 
 .navbar-brand {
   font-size: 3vh;
+}
+
+.hero-section {
+  background-color: #eeeeee;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  align-items: center;
+  font-family: "Nova square", cursive;
+}
+.hero-section img {
+  height: 60vh;
+}
+.hero-section h1, .hero-section .h1 {
+  width: 30vw;
+}
+.hero-section p {
+  width: 35vw;
+}
+.hero-section .hero-section-button {
+  color: white;
+  background-color: #ce1212;
+  border: none;
+  border-radius: 20px;
+  width: 7vw;
+  padding: 1vh;
+}
+.hero-section .button-watch-video {
+  border: none;
+}
+
+.section-about-us {
+  height: 70vh;
+}
+
+.first-child {
+  font-family: "Nova square", cursive;
+  text-align: center;
+  padding: 3vh;
+}
+.first-child p {
+  color: gray;
+  font-size: 1.5vw;
+}
+.first-child h2 span, .first-child .h2 span {
+  color: #ce1212;
+}
+
+.section-about-us {
+  height: 120vh;
+}
+.section-about-us .section-about-us-child2 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+.section-about-us .section-about-us-child2 .about-us-child2-left {
+  font-family: "Nova square", cursive;
+  position: relative;
+}
+.section-about-us .section-about-us-child2 .child2-book-table {
+  background-color: white;
+  height: 10vh;
+  width: 20vw;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-left: 5vw;
+}
+.section-about-us .section-about-us-child2 .child2-book-table span {
+  color: #ce1212;
+}
+.section-about-us .about-us-child2-right {
+  height: 110vh;
+  width: 35vw;
+  font-family: "Nova square", cursive;
+  overflow-x: hidden;
+}
+.section-about-us .about-us-child2-right p {
+  width: 35vw;
+}
+.section-about-us .about-us-child2-right img {
+  height: 42vh;
+  width: 50vw;
+}
+.section-about-us .child2-right {
+  height: 40vh;
+}
+
+.section-cards {
+  background-color: #eeeeee;
+  height: vh;
+  font-family: "Nova square", cursive;
+}
+
+.child1-cards {
+  background-color: #ce1212;
+  width: 20vw !important;
+  height: 45vh;
+  padding: 3vh !important;
+}
+.child1-cards p {
+  font-size: small;
+  color: white;
+}
+.child1-cards button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(238, 238, 238, 0.368627451);
+  color: white;
+  width: 10vw;
+  text-align: center;
+  padding: 1vh;
+}
+
+.cards {
+  height: 60vh;
+  padding: 3vh;
+  width: 90%;
+}
+
+.child2-cards {
+  background-color: white;
+  width: 17vw;
+  height: 37vh;
+  text-align: center;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.child2-cards i {
+  text-align: center;
+  color: #ce1212;
+}
+
+.white_cards {
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  border: none;
+  background-color: rgba(206, 18, 18, 0.5137254902);
+  width: 3vw;
+  height: 5vh;
+  border-radius: 50%;
+}
+
+@media (max-width: 426px) {
+  .navbar {
+    display: flex !important;
+  }
+  .boutton-navbar {
+    width: 25vw !important;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 120vh !important;
+  }
+  .hero-section-left {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+  }
+  .hero-section-left h1, .hero-section-left .h1 {
+    width: 80vw !important;
+    font-size: smaller;
+    font-weight: bolder;
+    font-size: 5vh;
+    text-align: center;
+  }
+  .hero-section-left p {
+    width: 100% !important;
+    text-align: center;
+    padding: 1vh;
+  }
+  .hero-section-buttons {
+    display: flex;
+  }
+  .hero-section-buttons button {
+    width: 35vw !important;
+  }
+  .hero-section-buttons button .icon-vid {
+    color: #ce1212;
+  }
+  .first-child {
+    padding: 2vh;
+  }
+  .first-child p {
+    font-size: 4vw;
+  }
+  .section-about-us {
+    height: 150vh !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .section-about-us-child2 {
+    display: flex;
+    flex-direction: column;
+    height: 200vh !important;
+  }
+  .about-us-child2-left img {
+    width: 100vw !important;
+    margin-left: 0 !important;
+    height: 50vh;
+  }
+  .about-us-child2-right .child2-right {
+    height: 40vh !important;
+  }
+  .about-us-child2-right p {
+    width: 100vw !important;
+  }
+  .about-us-child2-right img {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  .child2-book-table {
+    width: 45vw !important;
+    bottom: 15vh !important;
+  }
+  .about-us-child2-right {
+    width: 100% !important;
+    height: 200vh !important;
+  }
+  .section-cards {
+    height: vh !important;
+    padding: 5vh !important;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: 200vh !important;
+  }
+  .white_cards {
+    display: flex;
+    height: 100vh !important;
+    margin-left: 5vw;
+    flex-direction: column;
+  }
+  .child2-cards {
+    width: 100vw !important;
+  }
+  .child1-cards {
+    width: 100vw !important;
+    margin-left: 3vw;
+  }
+  .child1-cards button {
+    width: 30vw !important;
+  }
+  .icon {
+    width: 10vw !important;
+    height: 10vh !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
