@@ -12151,6 +12151,67 @@ body {
   justify-content: space-between;
 }
 
+.carousel1 {
+  background-color: rgba(238, 238, 238, 0.368627451);
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+}
+.carousel1 i {
+  color: orange;
+}
+.carousel1 img {
+  width: 15vw !important;
+  height: 30vh !important;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+
+.carousel-content {
+  margin-left: 10vw;
+  height: 60vh;
+  display: flex;
+  align-items: start;
+}
+
+.left-section {
+  border-left: 3px red solid;
+  height: 30vh !important;
+}
+
+.carousel2 {
+  background-color: gray;
+  height: 60vh;
+  width: 100%;
+}
+
+.cards-chefs {
+  height: 95vh !important;
+  width: 90%;
+}
+
+.img-card {
+  right: 0;
+  position: relative;
+  bottom: 0;
+  background-image: url(../imgs/chefs/chefs-1.jpg);
+  background-size: cover;
+  height: 70vh;
+  width: 25vw;
+}
+
+.card-content {
+  position: absolute;
+  border-top: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  bottom: 0%;
+}
+
 @media (max-width: 426px) {
   .navbar {
     display: flex !important;
@@ -12231,8 +12292,8 @@ body {
     height: 200vh !important;
   }
   .section-cards {
-    height: vh !important;
-    padding: 5vh !important;
+    height: 180vh !important;
+    padding: 3vh !important;
   }
   .cards {
     display: flex;
@@ -12249,7 +12310,11 @@ body {
     width: 100vw !important;
   }
   .child1-cards {
-    width: 100vw !important;
+    width: 85vw !important;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 3vw;
   }
   .child1-cards button {
@@ -12262,6 +12327,61 @@ body {
   .content {
     width: 70vw !important;
     height: 45vh !important;
+  }
+  .bg-attachement {
+    height: 90vh !important;
+    background-color: yellow;
+  }
+  .bg-attachement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+  }
+  .carousel-fistchild {
+    display: none;
+  }
+  .left-section {
+    display: none;
+  }
+  .carousel-content {
+    align-items: center;
+    justify-content: center;
+    width: 100vw !important;
+  }
+  .carousel-content img {
+    width: 80vw !important;
+    height: 70vw !important;
+  }
+  .right-img {
+    width: 1000px !important;
+    padding: 0vh !important;
+    margin-right: 20vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-chefs {
+    display: flex;
+    flex-direction: column;
+  }
+  .chefs {
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column !important;
+    width: 100vw !important;
+  }
+  .containers-card {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-card {
+    width: 100vw !important;
+    height: 80vh !important;
+  }
+  .cards-chefs .first-child {
+    width: 100vw !important;
   }
 }
 
