@@ -86,6 +86,7 @@
         width: 35vw
         font-family: 'Nova square',cursive
         overflow-x: hidden
+        overflow-y: hidden
         p
             width: 35vw
         img
@@ -97,14 +98,13 @@
 // cards
 .section-cards
     background-color: #eeeeee
-    height: vh
     font-family: 'Nova square',cursive
-    
+    justify-content: space-around 
 
 .child1-cards
     background-color: #ce1212
-    width: 20vw !important
-    height: 45vh
+    width: 27vw !important
+    height: 50vh
     padding: 3vh !important
     p
         font-size: small
@@ -131,13 +131,21 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    margin-left: 4vw
     i
         text-align: center
         color:#ce1212
 .white_cards
     height: 45vh
-    justify-content: center
     align-items: center
+    justify-content: space-around
+    width: 70vw
+.child2-cards:hover
+    padding: 10vh
+    width: 19vw !important
+    height: 39vh !important
+    // background-color: red
+
 
 .icon
     border: none
@@ -145,6 +153,90 @@
     width: 3vw
     height: 5vh
     border-radius: 50%
+// MENU //
+.menu-switch
+    font-family: 'Nova square',cursive
+    font-weight: bolder
+    display: flex
+    justify-content: center
+    // border-bottom: 2px solid #ce121283
+.menu-switch
+    p:hover
+        color:  #ce121283
+.menu-choices
+    gap: 10vw !important
+    font-family: 'Nova square',cursive
+    width: 100% !important
+
+.breakfast
+    display: flex
+    margin-left: 5vw
+.Lunch
+    display: flex
+    justify-content: center
+    display: none
+    margin-left: 5vw
+body
+    height: 100vh
+    width: 100%
+
+.modal
+    background: #00000074
+    height: 100vh
+    width: 100%
+    align-items: center
+    justify-content: center
+    display: none
+
+.content
+    position: fixed
+    background-color: whitesmoke
+    top: 3
+    margin-top: 15vh
+    margin-right: 3vh
+    right: 0
+    width: 20vw
+    height: 43vh
+    // background-color: red
+    border: none
+    border-radius: 10px
+
+
+    button
+        width: 48.8%
+        border: 1px black solid
+        border-radius: 10px
+        padding: 1vh
+    input
+        padding: 1vh
+        width: 90%
+        border: 1px black solid
+        border-radius: 10px
+    input:hover
+        box-shadow: 3px 3px white
+.login
+    display: none
+    
+.bg-attachement
+    background-image: url(../imgs/stats-bg.jpg)
+    background-attachment: fixed
+    height: 60vh
+    width: 100%
+    font-family: 'Nova square',cursive
+
+.opacity
+    background-color: rgba(0, 0, 0, 0.421)
+    display: flex
+    justify-content: center
+    justify-content: space-between
+    span
+        color: lightgray
+.bg-attachement-content
+    display: flex 
+    width: 60%
+    justify-content: center
+    justify-content: space-between
+
 
 
 
@@ -242,6 +334,26 @@
     .icon
         width: 10vw !important
         height: 10vh !important
+    .content
+        // background-color: blue
+        width: 70vw !important
+        height: 45vh !important
+    // .navigation
+    //     position: fixed !important
+    //     top: 13vh !important
+    //     right: -50vw !important
+    //     width: 100vw !important
+    //     height: 100vh !important
+    //     display: flex !important
+    //     flex-direction: column !important
+    //     align-items: center!important
+    //     transition: ease-in 0.4s !important
+    //     z-index: 999
+    //     background: #fff
+    
+    // .show-nav
+    //     right: -110vw !important
+    
 
         
 

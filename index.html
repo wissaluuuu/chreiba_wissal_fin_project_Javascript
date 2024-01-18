@@ -1,29 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
 
-    <!DOCTYPE html>
-    <html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='./public/css/app.css'>
+</head>
 
-    <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Document</title>
-        <link rel='stylesheet' href='./public/css/app.css'>
-    </head>
+<body>
+    <!-- ? navbar -->
+    <section class="navbar-section">
 
-    <body>
-        <!-- ? navbar -->
-        <section class="navbar-section">
+        <nav class="navbar  navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><b>Lions Resto</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="child1-navbar">
 
-                <nav class="navbar  navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><b>Lions Resto</b></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="child1-navbar">
 
-                        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -42,113 +43,280 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Gallery</a>
                             </li>
-                            
+
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
                                 </a>
                                 <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
-                            
-                            </ul>
-                            <button class="btn btn-outline-success boutton-navbar" type="submit">Sign in</button>
+
+                        </ul>
+                        <button class="btn btn-outline-success boutton-navbar btn" type="submit">Sign in</button>
+                        <!-- *modal -->
+                        <section >
+                            <div id="modal" class="modal">
+                                <div class="content">
+                                    <div>
+                                        <button class="signin-btn">SIGN IN</button>
+                                        <button class="login-btn">LOG IN</button>
+                                    </div>
+                                    <section class="signin">
+                                        <form action="">
+                                            <label for="">Enter ur name</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Enter ur Email</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Enter ur age</label><br>
+                                            <input type="text"><br>
+                                            <label for="">Enter ur Number</label><br>
+                                            <input type="text">
+                                        </form>
+                                    </section>
+                                    <section class="login">
+                                        <form action="">
+                                            <label for="">enter ur Number</label><br>
+                                            <input type="text"><br>
+                                            <label for="">enter ur password</label><br>
+                                            <input type="text"><br>
+                                            
+                                        </form>
+                                    </section>
+                                </div>
+            
+                            </div> 
+                        </section>
                     </div>
-                        
-                    </div>
-                    </div>
-                </nav>
-        </section>
-        <!-- ? hero section -->
-        <section class="hero-section">
-            <div class="hero-section-left">
-                <h1 >ENJOY YOUR HEALTH DELICIOUS FOOD</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quae.</p>
-                <div class="hero-section-buttons">
-                    <button class="hero-section-button"> Sign in</button>
-                    <button class="button-watch-video"> <svg class="icon-vid" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg> Watch Video</button>
+
                 </div>
             </div>
-            <div class="hero-section-right">
-                <img src="./public/imgs/hero-img.png" alt="">
+        </nav>
+    </section>
+
+    <!-- ? hero section -->
+    <section class="hero-section">
+        <div class="hero-section-left">
+            <h1>ENJOY YOUR HEALTH DELICIOUS FOOD</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nisi, quae.</p>
+            <div class="hero-section-buttons">
+                <button class="hero-section-button"> Sign in</button>
+                <button class="button-watch-video"> <svg class="icon-vid" xmlns="http://www.w3.org/2000/svg" height="20"
+                        width="20"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
+                    <!-- * si je click sur ce bouton une carousel coutain une video va apparaitre -->
+                        </svg> Watch Video</button>
+
+            </div>
+        </div>
+        <div class="hero-section-right">
+            <img src="./public/imgs/hero-img.png" alt="">
+        </div>
+    </section>
+    
+    
+    <!-- ? about us -->
+    <section class="section-about-us">
+        <div class="first-child">
+            <p>ABOUT US</p>
+            <h2>LEARN MORE <span>ABOUT US</span></h2>
+        </div>
+        <div class="section-about-us-child2 ">
+
+            <div class="about-us-child2-left">
+                <img src="./public/imgs/about.jpg" width="750px" height="654px" alt="">
+                <div class="child2-book-table">
+                    <p><b>BOOK A TABLE</b></p>
+                    <span><b>+1 8652 658154 54</b></span>
+                </div>
+            </div>
+            <div class="about-us-child2-right h-100">
+                <div class="child2-right p-3">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. quae vitae numquam neque eum provident
+                        laborum cumque deserunt iusto. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i
+                            class="fa-solid fa-check-double text-danger  mb-2"></i>
+                        <p> Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i
+                            class="fa-solid fa-check-double text-danger  mb-2"></i>
+                        <p> Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i
+                            class="fa-solid fa-check-double text-danger  mb-2"></i>
+                        <p> Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <p class="fs-6">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. quae vitae numquam neque eum provident
+                        laborum cumque deserunt
+                    </p>
+                </div>
+                <img src="./public/imgs/about-2.jpg" class="mt-5" class="m-lg-4" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- * matnsaych button katkber u katsghar -->
+    <!-- ?cards -->
+    <section class="section-cards">
+        <div class="cards d-flex gap-lg-3  justify-content-center align-items-center">
+
+            <div class="child1-cards d-flex flex-column gap-3 p-lg-2">
+                <h1 class="text-white fs-2">WHY CHOOSE YUMMY?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero excepturi quos culpa temporibus.
+                    Illo autem error corporis possimus, voluptas elii explicabo delectus. Possimus inventore sapiente
+                    eligendi nihil culpa eveniet?</p>
+                <div class="d-flex justify-content-center text-lg-center"><button>Learn more</button></div>
+            </div>
+            <div class=" white_cards d-flex gap-lg-3 align-content-center justify-content-center ">
+
+                <div class="child2-cards d-flex flex-column gap-lg-3">
+                    <div class=" icon d-flex justify-content-center align-items-center fs-4"><i
+                            class="  fa-solid fa-book"></i></div>
+                    <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
+                </div>
+                <div class="child2-cards  d-flex flex-column gap-lg-3">
+                    <div class="icon d-flex justify-content-center align-items-center fs-4"><i
+                            class="  fa-solid fa-book"></i></div>
+                    <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu</p>
+                </div>
+                <div class="child2-cards  d-flex flex-column gap-lg-3">
+                    <div class="icon d-flex justify-content-center align-items-center fs-4"><i
+                            class="  fa-solid fa-book"></i></div>
+                    <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ?bg attachement -->
+     <section class="bg-attachement">
+        <div class="opacity d-flex justify-content-center  h-100 align-items-center  w-100 ">
+            <div class="bg-attachement-content">
+
+                <h2 class="text-white fw-bolder d-flex flex-column text-center fs-1">232 <span class="fs-6">hello wissu</span></h2>
+                <h2 class="text-white fw-bolder d-flex flex-column text-center fs-1 ">456 <span class="fs-6">hello wissu</span></h2>
+                <h2 class="text-white fw-bolder d-flex flex-column text-center fs-1 ">258 <span class="fs-6">hello wissu</span></h2>
+                <h2 class="text-white fw-bolder d-flex flex-column text-center fs-1 ">157 <span class="fs-6">hello wissu</span></h2>
+            </div>
+        </div>
+     </section>
+    <!-- ? MENU -->
+    <section class="menu">
+        <div class="first-child">
+            <p>OUR MENU</p>
+            <h2>CHECK OUR <span>YUMMY MENU</span></h2>
+        </div>
+        <div class="menu-switch d-flex gap-lg-2 ">
+            <p class="btn-break">BREAKFAST</p>
+            <p class="btn-lunch">LUNCH</p>
+        </div>
+        <section class="breakfast">
+            <div class="menu-choices d-flex  gap-lg-5 flex-wrap w-75 justify-content-center">
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-1(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+
             </div>
         </section>
-<!-- ? about us -->
-<section class="section-about-us">
-<div class="first-child">
-<p>ABOUT US</p>
-<h2>LEARN MORE <span>ABOUT US</span></h2>
-</div>
-<div class="section-about-us-child2 " >
-    
-    <div class="about-us-child2-left">
-        <img src="./public/imgs/about.jpg" width="750px" height="654px" alt="">
-        <div class="child2-book-table">
-            <p><b>BOOK A TABLE</b></p>
-            <span><b>+1 8652 658154 54</b></span>
-        </div>
-    </div>
-    <div class="about-us-child2-right h-100">
-        <div class="child2-right p-3">
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.  quae vitae numquam neque eum provident laborum cumque deserunt iusto. Lorem ipsum dolor sit amet.
-        </p>
-        <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i class="fa-solid fa-check-double text-danger  mb-2"></i> <p> Lorem ipsum dolor sit amet</p></div>
-        <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i class="fa-solid fa-check-double text-danger  mb-2"></i> <p> Lorem ipsum dolor sit amet</p></div>
-        <div class="d-flex align-items-center gap-2 fs-6 m-lg-3 "> <i class="fa-solid fa-check-double text-danger  mb-2"></i> <p> Lorem ipsum dolor sit amet</p></div>
-        <p class="fs-6">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.  quae vitae numquam neque eum provident laborum cumque deserunt 
-      </p>
-        </div>
-        <img src="./public/imgs/about-2.jpg" class="mt-5" class="m-lg-4" alt="">
-    </div>
-</div>
-</section>
-<!-- * matnsaych button katkber u katsghar -->
-<!-- ?cards -->
-<section class="section-cards">
-    <div class="cards d-flex gap-lg-3  justify-content-center align-items-center">
+        <section class="Lunch">
+            <div class="menu-choices d-flex  gap-lg-5 flex-wrap w-75 justify-content-center">
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
+                <div class="text-center">
+                    <img src="./public/imgs/menu/menu-item-2(1).png" width="250px">
+                    <h4><b>Lorem, ip </b></h4>
+                    <p class="text-secondary ">Lorem ipsum dolor sit </p>
+                    <span class="fw-bolder text-danger">12.95</span>
+                </div>
 
-        <div class="child1-cards d-flex flex-column gap-3 p-lg-2" >
-        <h1 class="text-white fs-2">WHY CHOOSE YUMMY?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero excepturi quos culpa temporibus. Illo autem error corporis possimus, voluptas elii explicabo delectus. Possimus inventore sapiente eligendi nihil culpa eveniet?</p>
-        <div class="d-flex justify-content-center text-lg-center"><button >Learn more</button></div>
-        </div>
-        <div class=" white_cards d-flex gap-lg-3 align-content-center justify-content-center ">
-
-            <div class="child2-cards d-flex flex-column gap-lg-3">
-                <div class=" icon d-flex justify-content-center align-items-center fs-4"><i class="  fa-solid fa-book"></i></div>
-                <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
             </div>
-            <div class="child2-cards  d-flex flex-column gap-lg-3">
-                <div class="icon d-flex justify-content-center align-items-center fs-4"><i class="  fa-solid fa-book"></i></div>
-                <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu</p>
-            </div>
-            <div class="child2-cards  d-flex flex-column gap-lg-3">
-                <div class="icon d-flex justify-content-center align-items-center fs-4"><i class="  fa-solid fa-book"></i></div>
-                <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
+    </section>
+   
+    <!-- ? carousel -->
 
 
+    <script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.js></script>
+    <script src="./public/js/app.js"></script>
+</body>
 
-
-        <script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.js></script>
-        <script src="./public/js/app.js"></script>
-    </body>
-
-    </html>
-
+</html>

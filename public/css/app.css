@@ -11968,6 +11968,7 @@ textarea.form-control-lg {
   width: 35vw;
   font-family: "Nova square", cursive;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .section-about-us .about-us-child2-right p {
   width: 35vw;
@@ -11982,14 +11983,14 @@ textarea.form-control-lg {
 
 .section-cards {
   background-color: #eeeeee;
-  height: vh;
   font-family: "Nova square", cursive;
+  justify-content: space-around;
 }
 
 .child1-cards {
   background-color: #ce1212;
-  width: 20vw !important;
-  height: 45vh;
+  width: 27vw !important;
+  height: 50vh;
   padding: 3vh !important;
 }
 .child1-cards p {
@@ -12022,6 +12023,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 4vw;
 }
 .child2-cards i {
   text-align: center;
@@ -12030,8 +12032,15 @@ textarea.form-control-lg {
 
 .white_cards {
   height: 45vh;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  width: 70vw;
+}
+
+.child2-cards:hover {
+  padding: 10vh;
+  width: 19vw !important;
+  height: 39vh !important;
 }
 
 .icon {
@@ -12040,6 +12049,106 @@ textarea.form-control-lg {
   width: 3vw;
   height: 5vh;
   border-radius: 50%;
+}
+
+.menu-switch {
+  font-family: "Nova square", cursive;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-switch p:hover {
+  color: rgba(206, 18, 18, 0.5137254902);
+}
+
+.menu-choices {
+  gap: 10vw !important;
+  font-family: "Nova square", cursive;
+  width: 100% !important;
+}
+
+.breakfast {
+  display: flex;
+  margin-left: 5vw;
+}
+
+.Lunch {
+  display: flex;
+  justify-content: center;
+  display: none;
+  margin-left: 5vw;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.4549019608);
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.content {
+  position: fixed;
+  background-color: whitesmoke;
+  top: 3;
+  margin-top: 15vh;
+  margin-right: 3vh;
+  right: 0;
+  width: 20vw;
+  height: 43vh;
+  border: none;
+  border-radius: 10px;
+}
+.content button {
+  width: 48.8%;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 1vh;
+}
+.content input {
+  padding: 1vh;
+  width: 90%;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.content input:hover {
+  box-shadow: 3px 3px white;
+}
+
+.login {
+  display: none;
+}
+
+.bg-attachement {
+  background-image: url(../imgs/stats-bg.jpg);
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+  font-family: "Nova square", cursive;
+}
+
+.opacity {
+  background-color: rgba(0, 0, 0, 0.421);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.opacity span {
+  color: lightgray;
+}
+
+.bg-attachement-content {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 426px) {
@@ -12149,6 +12258,10 @@ textarea.form-control-lg {
   .icon {
     width: 10vw !important;
     height: 10vh !important;
+  }
+  .content {
+    width: 70vw !important;
+    height: 45vh !important;
   }
 }
 
