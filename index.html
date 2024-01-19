@@ -121,9 +121,10 @@
                             d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
                         <!-- * si je click sur ce bouton une carousel coutain une video va apparaitre -->
                     </svg> Watch Video</button>
-                        <div class="video d-none"> 
-                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/kX1aqH_epwY?si=q14reCGTLSWqPUoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                    <div class="vid-back position-relative">
+
+                        <iframe class="video" width="1000" height="400" src="https://www.youtube.com/embed/kX1aqH_epwY?si=q14reCGTLSWqPUoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
 
             </div>
         </div>
@@ -171,7 +172,17 @@
                         laborum cumque deserunt
                     </p>
                 </div>
-                <img src="./public/imgs/about-2.jpg" class="mt-5" class="m-lg-4" alt="">
+                <div class="child2-right">
+                    <img src="./public/imgs/about-2.jpg" class="image" alt="" width="500px" height="360px">
+                    <button class="button">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                            width="26px">
+                            <path
+                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -190,20 +201,19 @@
             <div class=" white_cards d-flex gap-lg-3 align-content-center justify-content-center ">
 
                 <div class="child2-cards d-flex flex-column gap-lg-3">
-                    <div class=" icon d-flex justify-content-center align-items-center fs-4"><i
-                            class="  fa-solid fa-book"></i></div>
+                    <div class=" icon d-flex justify-content-center align-items-center fs-4">
+                        <i class="fa-solid fa-clipboard-list"></i></div>
                     <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
                 </div>
                 <div class="child2-cards  d-flex flex-column gap-lg-3">
-                    <div class="icon d-flex justify-content-center align-items-center fs-4"><i
-                            class="  fa-solid fa-book"></i></div>
+                    <div class="icon d-flex justify-content-center align-items-center fs-4">
+                        <i class="fa-regular fa-gem"></i></div>
                     <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu</p>
                 </div>
                 <div class="child2-cards  d-flex flex-column gap-lg-3">
-                    <div class="icon d-flex justify-content-center align-items-center fs-4"><i
-                            class="  fa-solid fa-book"></i></div>
+                    <div class="icon d-flex justify-content-center align-items-center fs-4"><i class="fa-solid fa-server"></i></div>
                     <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit.</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam qu.</p>
                 </div>
@@ -232,9 +242,9 @@
             <p>OUR MENU</p>
             <h2>CHECK OUR <span>YUMMY MENU</span></h2>
         </div>
-        <div class="menu-switch d-flex gap-lg-2 ">
-            <p class="btn-break">BREAKFAST</p>
-            <p class="btn-lunch">LUNCH</p>
+        <div class="menu-switch d-flex gap-lg-3 ">
+            <p class="btn-break fs-3">BREAKFAST</p>
+            <p class="btn-lunch fs-3">LUNCH</p>
         </div>
         <section class="breakfast">
             <div class="menu-choices d-flex  gap-lg-5 flex-wrap w-75 justify-content-center">
@@ -409,9 +419,29 @@
 
     </section>
 <!-- ? carousel made by hand -->
-<section class="carousel2">
-    <div></div>
+<section class="d-flex justify-content-center w-100">
+
+    <section class="carousel2 d-flex gap-lg-5  justify-content-center    text-white ">
+    
+        <i class="fa-solid fa-chevron-left bg-white text-black text-center left"> </i>
+        <div class="carousel d-flex"> 
+            <img src="./public/imgs/events-1(1).jpg" alt="">
+            <img src="./public/imgs/events-2(1).jpg" alt="">
+            <img src="./public/imgs/events-3(1).jpg" alt="">
+            <img src="./public/imgs/events-1(1).jpg" alt="">
+            <img src="./public/imgs/events-2(1).jpg" alt="">
+            <img src="./public/imgs/events-3(1).jpg" alt="">
+            
+        </div> 
+        <i class="fa-solid fa-chevron-right bg-white text-black  text-center right"></i>
+    </section>
 </section>
+
+
+
+
+
+
 <!-- ?cards chefs -->
 <section class="cards-chefs">
     <div class="first-child d-flex flex-column ">

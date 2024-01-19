@@ -1,3 +1,5 @@
+// const { Carousel } = require("bootstrap")
+
 //! switch menu
 let menu_breakfast = document.querySelector('.breakfast')
 let menu_lunch = document.querySelector('.Lunch')
@@ -34,6 +36,13 @@ button_login.addEventListener('click',()=>{
 let btn_watch = document.querySelector(".watch-video")
 let video = document.querySelector('.video')
 btn_watch.addEventListener("click",()=>{
-    console.log("wissal");
-    video.style.display = 'block'
+    console.log("wissaluzgyjdsqb");
+    video.style.display = "block"
 })
+//! carousel hand made
+let carousel = document.querySelector(".carousel")
+const dragging = (e) =>{
+    carousel.scrollLeft ;
+}
+dragging()
+carousel.addEventListener("mousemove",dragging);

@@ -2,7 +2,7 @@
 .body
     overflow-x: hidden
 .navbar
-    background-color : white !important
+    background-color: white !important
     padding: 5vh
     font-family: 'Nova square',cursive
 
@@ -15,7 +15,7 @@
     justify-content: space-between
     font-weight: bolder
 .boutton-navbar
-    color : white
+    color: white
     background-color: #ce1212
     border: none
     border-radius: 20px
@@ -39,7 +39,7 @@
     p
         width: 35vw
     .hero-section-button
-        color : white
+        color: white
         background-color: #ce1212
         border: none
         border-radius: 20px
@@ -83,23 +83,49 @@
                 color: #ce1212
     .about-us-child2-right
         height: 110vh
-        width: 35vw
+        width: 35vw !important
         font-family: 'Nova square',cursive
-        overflow-x: hidden
-        overflow-y: hidden
         p
             width: 35vw
         img
-            
+
             height: 42vh
             width: 50vw
     .child2-right
-        height: 40vh
+        position: relative
+        .button
+            display: flex
+            justify-content: center
+            color: #fff
+            width: 80px
+            height: 80px
+            border-radius: 100%
+            background: linear-gradient(30deg, red 20%, rgb(255, 38, 0) 80%)
+            transition: all 0.3s ease-in-out 0s
+            box-shadow: red 0px 0px 0px 0px
+            animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse
+            align-items: center
+            border: 0
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50% , -50%)
+
+            &:is(:hover, :focus) svg
+                transform: scale(1.5)
+
+                @keyframes pulse
+                    100%
+                        box-shadow: 0 0 0 45px rgba(193,244,246,0)
+    .child2-right
+        img
+            width: 35vw !important
+            height: 40vh !important
 // cards
 .section-cards
     background-color: #eeeeee
     font-family: 'Nova square',cursive
-    justify-content: space-around 
+    justify-content: space-around
 
 .child1-cards
     background-color: #ce1212
@@ -112,7 +138,7 @@
     button
         border: none
         border-radius: 20px
-        background-color:  #eeeeee5e
+        background-color: #eeeeee5e
         color: white
         width: 10vw
         text-align: center
@@ -136,7 +162,11 @@
     margin-left: 4vw
     i
         text-align: center
-        color:#ce1212
+        height: 5vh
+        display: flex
+        align-items: center
+        font-size: larger
+        color: #ce1212
 .white_cards
     height: 45vh
     align-items: center
@@ -146,12 +176,11 @@
     &:hover
         transform: scale(1.12)
 
-
 .icon
     border: none
-    background-color:  #ce121283
-    width: 3vw
-    height: 5vh
+    background-color: #f1848483
+    width: 4vw
+    height: 7vh
     border-radius: 50%
 // MENU //
 .menu-switch
@@ -165,20 +194,22 @@
     // border-bottom: 2px solid #ce121283
 .menu-switch
     p:hover
-        color:  #ce121283
+        color: #ce121283
 .menu-choices
     gap: 5vw !important
     font-family: 'Nova square',cursive
     width: 80% !important
     margin-left: 5vw
+    width: 70vw !important
+
 .breakfast
     display: flex
-    margin-left: 5vw
+    justify-content: center
+    align-items: center
 .Lunch
     display: flex
     justify-content: center
     display: none
-    margin-left: 5vw
 body
     height: 100vh
     width: 100%
@@ -204,7 +235,6 @@ body
     border: none
     border-radius: 10px
 
-
     button
         width: 48.8%
         border: 1px black solid
@@ -219,7 +249,7 @@ body
         box-shadow: 3px 3px white
 .login
     display: none
-    
+
 .bg-attachement
     background-image: url(../imgs/stats-bg.jpg)
     background-attachment: fixed
@@ -235,7 +265,7 @@ body
     span
         color: lightgray
 .bg-attachement-content
-    display: flex 
+    display: flex
     width: 60%
     justify-content: center
     justify-content: space-between
@@ -250,7 +280,7 @@ body
     img
         width: 15vw !important
         height: 30vh !important
-        border: 3px white solid 
+        border: 3px white solid
         border-radius: 50%
 .carousel-content
     margin-left: 10vw
@@ -262,22 +292,57 @@ body
     height: 30vh !important
 //carousel hand made
 .carousel2
-    background-color: gray
     height: 60vh
-    width: 100%
+    // overflow: hidden
+    overflow-x: auto
+    padding: 2vh
+    display: flex
+    justify-content: center
+    align-items: center
+    white-space: nowrap
+    cursor: pointer
+    position: relative
+    max-width: 1500px
+
+    .card1
+        background-size: cover
+        width: calc( 95% /3 )
+    i
+        height: 5vh
+        width: 3.5vw
+        border: none
+        border-radius: 50%
+        position: absolute
+        padding: 1vh
+    .left
+        top: 50%
+        left: 0
+    .right
+        top: 50%
+        right: 0
+    .carousel
+        img
+            width: calc( 100% / 3 )
+            object-fit: cover
+            padding: 1vh
+            height: 60vh
+.carousel2::-webkit-scrollbar
+    display: none
+    background: transparent
 
 // cards chefs
 .cards-chefs
     height: 95vh !important
-    width: 90%
+    width: 100%
+    justify-content: center
 .img-card
     right: 0
     position: relative
     bottom: 0
     background-image: url(../imgs/chefs/chefs-1.jpg)
     background-size: cover
-    height: 70vh
-    width: 25vw
+    height: 60vh
+    width: 23vw
     &:hover
         transform: scale(1.12)
 .card-content
@@ -285,7 +350,7 @@ body
     border-top: 2px solid lightgray
     display: flex
     flex-direction: column
-    height: 25vh
+    height: 22vh
     justify-content: center
     background-color: white
     position: absolute
@@ -293,7 +358,7 @@ body
 // formular
 .formular
     width: 100%
-    height: 100vh 
+    height: 100vh
     display: flex
     flex-direction: column
     justify-content: center
@@ -302,7 +367,7 @@ body
     font-family: 'Nova square',cursive
 .formular-content
     background-color: #eeeeee5e
-    height: 70vh 
+    height: 70vh
     width: 80%
     border: none
     border-radius: 15px
@@ -330,21 +395,17 @@ textarea
     color: gray
     padding: 1vh
 
-
-
-
-
-
-
-
-
-
+.video
+    position: absolute
+    // right: 8vw
+    top: -38vh
+    display: none
 
 @media ( max-width: 426px )
     .navbar
-        display: flex !important 
+        display: flex !important
     .boutton-navbar
-        width : 25vw !important
+        width: 25vw !important
     .hero-section
         display: flex
         flex-direction: column-reverse
@@ -361,7 +422,7 @@ textarea
             font-weight: bolder
             font-size: 5vh
             text-align: center
-        p 
+        p
             width: 100% !important
             text-align: center
             padding: 1vh
@@ -378,7 +439,7 @@ textarea
     .section-about-us
         height: 150vh !important
         display: flex
-        flex-direction: column  !important
+        flex-direction: column !important
     .section-about-us-child2
         display: flex
         flex-direction: column
@@ -393,41 +454,58 @@ textarea
             height: 40vh !important
         p
             width: 100vw !important
+            img
+                width: 100vw !important
+                height: 50vh !important
+        .child2-right
+            width: 100vw !important
+            height: 49vh !important
+            .image
+                width: 100vw !important
         img
             width: 100vw !important
-            height: 50vh !important
     .child2-book-table
         width: 45vw !important
         bottom: 15vh !important
     .about-us-child2-right
         width: 100% !important
         height: 200vh !important
+
     .section-cards
         height: 180vh !important
-        padding: 3vh !important
+        padding: 2vh !important
     .cards
         display: flex
         flex-direction: column
         height: 200vh !important
+        width: 95%
+        margin-bottom: 2vh !important
     .white_cards
         display: flex
-        height: 100vh !important
-        margin-left: 5vw 
+        height: 110vh !important
+        margin-left: 5vw
+        gap: 2vh
         flex-direction: column
     .child2-cards
-        width: 100vw !important
-    .child1-cards 
         width: 85vw !important
-        height: 55vh
+        height: 50vh !important
+        p
+            width: 85% !important
+    .child1-cards
+        width: 85vw !important
+        height: 45vh
         display: flex
         flex-direction: column
         align-items: center
-
-        margin-left: 3vw 
+        // margin-top: 2vh
+        margin-left: 3vw
         button
             width: 30vw !important
+        p
+            padding: 2vh !important
+
     .icon
-        width: 10vw !important
+        width: 15vw !important
         height: 10vh !important
     .content
         // background-color: blue
@@ -445,11 +523,11 @@ textarea
     //     transition: ease-in 0.4s !important
     //     z-index: 999
     //     background: #fff
-    
+
     // .show-nav
     //     right: -110vw !important
     .bg-attachement
-        height: 90vh !important
+        height: 110vh !important
         background-color: yellow
     .bg-attachement-content
         display: flex
@@ -461,12 +539,17 @@ textarea
     .left-section
         display: none
     .carousel-content
-        img
-            width: 80vw !important
-            height: 70vw !important
+        width: 100vw !important
+        height: 50vh !important
+        display: flex
         align-items: center
         justify-content: center
-        width: 100vw !important        
+        img
+            width: 100vw !important
+            height: 70vw !important
+            align-items: center
+            justify-content: center
+            width: 100vw !important
     .right-img
         width: 1000px !important
         padding: 0vh !important
@@ -492,7 +575,7 @@ textarea
     .cards-chefs
         .first-child
             width: 100vw !important
-    .formular 
+    .formular
         height: 330vh !important
     .right-formular
 
@@ -509,3 +592,18 @@ textarea
             height: 25vh
         button
             width: 90%
+    .carousel
+        img
+            width: 100%!important
+    .video
+        position: absolute
+        // top: 2vh
+        // bottom: 30vh
+        top: 50%
+        right: 1vw
+        width: 80vw !important
+        height: 30vh
+        // right: 1px
+        // top: -10vh
+
+        display: none
