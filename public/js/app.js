@@ -30,38 +30,10 @@ button_login.addEventListener('click',()=>{
     form_login.style.display='block'
     form_sign.style.display='none'
 })
-
-//! carousel video hero section
-
-// const carouselItems = document.querySelectorAll('.carousel-item');
-// let currentIndex = 0;
-
-// function showSlide(index) {
-
-//   carouselItems.forEach(item => {
-//     item.style.display = 'none';
-//   });
-
-//   carouselItems[index].style.display = 'block';
-// }
-
-// function nextSlide() {
-//   currentIndex = (currentIndex + 1) % carouselItems.length;
-//   showSlide(currentIndex);
-// }
-
-// function previousSlide() {
-//   currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-//   showSlide(currentIndex);
-// }
-
-// showSlide(currentIndex);
-
-// document.getElementById('nextBtn').addEventListener('click', nextSlide);
-// document.getElementById('prevBtn').addEventListener('click', previousSlide);
-//! navbar
-// let nav = document.querySelector('.navigation');
-// let navBtn = document.querySelector(".nav-btn-toggler")
-// navBtn.addEventListener('click',() =>{
-//     nav.classList.toggle("show-nav")
-// })
+//! watch video hero section
+let btn_watch = document.querySelector(".watch-video")
+let video = document.querySelector('.video')
+btn_watch.addEventListener("click",()=>{
+    console.log("wissal");
+    video.style.display = 'block'
+})

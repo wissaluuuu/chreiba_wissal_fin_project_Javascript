@@ -117,6 +117,8 @@
         width: 10vw
         text-align: center
         padding: 1vh
+    &:hover
+        transform: scale(1.12)
 .cards
     height: 60vh
     padding: 3vh
@@ -141,10 +143,8 @@
     justify-content: space-around
     width: 70vw
 .child2-cards:hover
-    padding: 10vh
-    width: 19vw !important
-    height: 39vh !important
-    // background-color: red
+    &:hover
+        transform: scale(1.12)
 
 
 .icon
@@ -159,15 +159,18 @@
     font-weight: bolder
     display: flex
     justify-content: center
+.text-content
+    background-color: pink
+    height: 50vh
     // border-bottom: 2px solid #ce121283
 .menu-switch
     p:hover
         color:  #ce121283
 .menu-choices
-    gap: 10vw !important
+    gap: 5vw !important
     font-family: 'Nova square',cursive
-    width: 100% !important
-
+    width: 80% !important
+    margin-left: 5vw
 .breakfast
     display: flex
     margin-left: 5vw
@@ -275,6 +278,8 @@ body
     background-size: cover
     height: 70vh
     width: 25vw
+    &:hover
+        transform: scale(1.12)
 .card-content
     position: absolute
     border-top: 2px solid lightgray
@@ -285,9 +290,45 @@ body
     background-color: white
     position: absolute
     bottom: 0%
-
-
-
+// formular
+.formular
+    width: 100%
+    height: 100vh 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: white
+    font-family: 'Nova square',cursive
+.formular-content
+    background-color: #eeeeee5e
+    height: 70vh 
+    width: 80%
+    border: none
+    border-radius: 15px
+    img
+        height: 70vh
+.input-form
+    width: 15vw
+    height: 6vh
+    padding: 1vh
+.right-formular
+    padding: 5vh
+    display: flex
+    flex-wrap: wrap
+    height: 30%
+    gap: 2vh
+    button
+        background-color: #ce121283
+        color: white
+        width: 17vw
+        border: none
+        border-radius: 20px
+        padding: 1.2vh
+textarea
+    width: 96%
+    color: gray
+    padding: 1vh
 
 
 
@@ -451,3 +492,20 @@ body
     .cards-chefs
         .first-child
             width: 100vw !important
+    .formular 
+        height: 330vh !important
+    .right-formular
+
+    .formular-content
+        background-color: red !important
+        height: 30vh
+        display: flex
+        flex-direction: column
+        margin-top: 20vh
+        input
+            width: 100%
+        textarea
+            width: 98%
+            height: 25vh
+        button
+            width: 90%

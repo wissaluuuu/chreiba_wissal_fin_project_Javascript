@@ -12006,6 +12006,9 @@ textarea.form-control-lg {
   text-align: center;
   padding: 1vh;
 }
+.child1-cards:hover {
+  transform: scale(1.12);
+}
 
 .cards {
   height: 60vh;
@@ -12037,10 +12040,8 @@ textarea.form-control-lg {
   width: 70vw;
 }
 
-.child2-cards:hover {
-  padding: 10vh;
-  width: 19vw !important;
-  height: 39vh !important;
+.child2-cards:hover:hover {
+  transform: scale(1.12);
 }
 
 .icon {
@@ -12058,14 +12059,20 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
+.text-content {
+  background-color: pink;
+  height: 50vh;
+}
+
 .menu-switch p:hover {
   color: rgba(206, 18, 18, 0.5137254902);
 }
 
 .menu-choices {
-  gap: 10vw !important;
+  gap: 5vw !important;
   font-family: "Nova square", cursive;
-  width: 100% !important;
+  width: 80% !important;
+  margin-left: 5vw;
 }
 
 .breakfast {
@@ -12199,6 +12206,9 @@ body {
   height: 70vh;
   width: 25vw;
 }
+.img-card:hover {
+  transform: scale(1.12);
+}
 
 .card-content {
   position: absolute;
@@ -12210,6 +12220,56 @@ body {
   background-color: white;
   position: absolute;
   bottom: 0%;
+}
+
+.formular {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Nova square", cursive;
+}
+
+.formular-content {
+  background-color: rgba(238, 238, 238, 0.368627451);
+  height: 70vh;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+}
+.formular-content img {
+  height: 70vh;
+}
+
+.input-form {
+  width: 15vw;
+  height: 6vh;
+  padding: 1vh;
+}
+
+.right-formular {
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  gap: 2vh;
+}
+.right-formular button {
+  background-color: rgba(206, 18, 18, 0.5137254902);
+  color: white;
+  width: 17vw;
+  border: none;
+  border-radius: 20px;
+  padding: 1.2vh;
+}
+
+textarea {
+  width: 96%;
+  color: gray;
+  padding: 1vh;
 }
 
 @media (max-width: 426px) {
@@ -12382,6 +12442,26 @@ body {
   }
   .cards-chefs .first-child {
     width: 100vw !important;
+  }
+  .formular {
+    height: 330vh !important;
+  }
+  .formular-content {
+    background-color: red !important;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+  .formular-content input {
+    width: 100%;
+  }
+  .formular-content textarea {
+    width: 98%;
+    height: 25vh;
+  }
+  .formular-content button {
+    width: 90%;
   }
 }
 
